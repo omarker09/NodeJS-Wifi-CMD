@@ -9,7 +9,7 @@ const CommandsInit = new Commands()
 const showProfiles = CommandsInit.show_wifi_profiles
 
 // Show The Selected Wifi Password
-const showProfilesByName = CommandsInit.showProfileWifiByName("Virus ")
+const showProfilesByName = CommandsInit.showProfileWifiByName("YOUR_WIFI_PROFILE")
 
 // Make Sure to pass commands Here
 InjectCMD(showProfilesByName)

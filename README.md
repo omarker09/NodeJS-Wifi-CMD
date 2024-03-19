@@ -11,9 +11,23 @@ Once you have Node.js installed, you can clone this repository by running the fo
 ```bash
 git clone https://github.com/omarker09/NodeJS-Wifi-CMD.git
 
-After cloning the repository, navigate into the project directory: cd NodeJS-Wifi-CMD
+After cloning the repository, navigate into the project directory: "cd NodeJS-Wifi-CMD"
 
-Then, install the required dependencies by running: npm install
+Then, install the required dependencies by running: "npm install"
 
-To run the program, use the following command: npm start 
+To run the program, use the following command: "npm start"
+
+--------------------------------------------------------------------------------------------
+
+Available Commands
+Show All WiFi Profiles: Use this command to display all the WiFi profiles stored on your system.
+
+const CommandsInit = new Commands()
+const showProfiles = CommandsInit.show_wifi_profiles
+InjectCMD(showProfiles)
+
+Show WiFi Profile Password by Name: Use this command to display the password of a specific WiFi profile. Replace "Virus" with the name of the WiFi profile you want to view the password for.
+
+const showProfilesByName = CommandsInit.showProfileWifiByName("YOUR_WIFI_NAME")
+InjectCMD(showProfilesByName)
 
